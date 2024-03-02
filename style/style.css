@@ -27,9 +27,17 @@ section{
 }
 
 #esquerda{
-    position: ;
-    border: 1px solid red;
-    height: 70vh;
-    left: 20px ;
+    position:absolute ;
+    height: 80vh;
+    left: 150px ;
+    top: 20px;
+    width: 35%;
+}
+textarea{
+    height: 19rem;
+    background-color:  #f8f8fa;
+    padding: 80px;
+    width: calc(84% - 80px); 
+    border: 0px;
 }
 
