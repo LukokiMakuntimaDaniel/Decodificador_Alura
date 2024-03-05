@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="javascript/js.js"></script>
 </head>
 
 <body>
@@ -15,10 +16,10 @@
             <article id="texto">
                 <h1>Desafio Alura + Oracle</h1>
 
-                <textarea name="" placeholder="Digite o seu texto.."></textarea>
+                <textarea name="" id="textoArea" placeholder="Digite o seu texto.." ></textarea>
 
                 <footer>
-                    <button id="btn-encr">
+                    <button id="btn-encr" onclick="criptografar()">
                         Criptografar
                     </button>
                     <button id="btn-descri">
@@ -37,12 +38,13 @@
                 </p>
             </article>
             <article id="resultado" style="display: none;">
-                <p>
+                <p id="resultadoP">
 
                 </p>
-                <button id="copiar" >Copiar</button>
+                <button id="copiar" onclick="copiar()">Copiar</button>
             </article>
         </section>
+        
 
 
 
