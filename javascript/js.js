@@ -37,11 +37,12 @@ function criptografar(){
 
 function descriptografar(){
     valor=document.getElementById("textoArea").value
-    novo1= valor.replace("/enter/g","e");
-    novo2 =novo1.replace("/imes/g","i");
-    novo3 = novo2.replace("/ai/g","a");
-    novo4 = novo3.replace("/ober/g","o");
-    novo5 = novo4.replace("/ufat/g","u");
+    novo1= valor.replaceAll("enter","e");
+    novo2 =novo1.replaceAll("imes","i");
+    novo3 = novo2.replaceAll("ai","a");
+    novo4 = novo3.replaceAll("ober","o");
+    novo5 = novo4.replaceAll("ufat","u");
+
     document.getElementById("resultadoP").innerHTML=novo5;
     document.getElementById("informacao").style.display="none";
     document.getElementById("resultado").style.display="block"
