@@ -35,6 +35,18 @@ function criptografar(){
     
 }
 
+function descriptografar(){
+    valor=document.getElementById("textoArea").value
+    novo1= valor.replace("enter","e");
+    novo2 =novo1.replace("imes","i");
+    novo3 = novo2.replace("ai","a");
+    novo4 = novo3.replace("ober","o");
+    novo5 = novo4.replace("ufat","u");
+    document.getElementById("resultadoP").innerHTML=novo5;
+    document.getElementById("informacao").style.display="none";
+    document.getElementById("resultado").style.display="block"
+}
+
 function copiar(){
     var texto = document.getElementById("resultadoP").innerHTML;
     var dummy = document.createElement("textarea");
