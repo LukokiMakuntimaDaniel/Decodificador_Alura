@@ -18,10 +18,10 @@
                 <textarea name="" placeholder="Digite o seu texto.."></textarea>
 
                 <footer>
-                    <button>
+                    <button id="btn-encr">
                         Criptografar
                     </button>
-                    <button>
+                    <button id="btn-descri">
                         Descriptografar
                     </button>
                 </footer>
@@ -31,14 +31,16 @@
         <section id="direita">
             <article id="informacao">
                 <img src="img/lupa.svg" alt="">
-                <p>
-                    Digite um texto que você deseja criptografar ou descriptografar.
+                <h2 style="margin: 10px;">Nenhuma Mensagem encontrada</h2>
+                <p id="texto">
+                    Digite um texto que você deseja <br>criptografar ou descriptografar.
                 </p>
             </article>
-            <article id="resultado">
+            <article id="resultado" style="display: none;">
                 <p>
 
                 </p>
+                <button id="copiar" >Copiar</button>
             </article>
         </section>
 
